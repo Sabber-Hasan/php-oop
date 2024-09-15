@@ -12,7 +12,7 @@ class TodoController extends Controller
      */
     public function index()
     {
-        return Todo::all();
+        return response()->json(Todo::all());
     }
 
     /**
@@ -63,4 +63,3 @@ class TodoController extends Controller
         return response()->json(null, 204);
     }
 }
-
